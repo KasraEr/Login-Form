@@ -1,0 +1,9 @@
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(#446bb3, #243b55);
+}

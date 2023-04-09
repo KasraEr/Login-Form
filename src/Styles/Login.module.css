@@ -1,0 +1,109 @@
+.loginbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+.loginbox h1 {
+  margin: 0 0 45px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.loginbox .userbox {
+  position: relative;
+  margin: 10px 0;
+}
+.loginbox .userbox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16pt;
+  color: #fff;
+  margin-bottom: 46px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.loginbox .userbox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16pt;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.loginbox .userbox .errormsg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 0;
+  color: red;
+  font-size: 10pt;
+  pointer-events: none;
+}
+.loginbox .checkbox {
+  padding: 10px 0;
+  font-size: 14pt;
+}
+.loginbox .checkbox .errormsg {
+  position: absolute;
+  bottom: 0;
+  padding: 22px 0;
+  color: red;
+  font-size: 10pt;
+  pointer-events: none;
+}
+.loginbox .checkbox label {
+  padding: 0 10px;
+  color: #1a73e8;
+}
+/* .loginbox .userbox input:focus ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 12pt;
+  color: #03e9f4;
+} */
+
+.loginbox .userbox input:focus ~ label,
+.userbox input:valid ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 12pt;
+  color: #03e9f4;
+}
+.formButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+.formButtons button {
+  background-color: #03e9f4;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.875rem;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+.formButtons button:hover {
+  background-color: #004aaa;
+}
+.formButtons a {
+  color: #03e9f4;
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+}
+.formButtons a:hover {
+  color: #004aaa;
+}
